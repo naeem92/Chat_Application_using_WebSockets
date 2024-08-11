@@ -1,0 +1,56 @@
+@media (max-width: 768px) {
+    .login-container, .chat-container {
+      width: 90%;
+      padding: 10px;
+    }
+    
+    #username-input {
+      width: 93%;
+      font-size: 14px;
+    }
+  
+    #login-button {
+      font-size: 14px;
+    }
+  
+    .chat-history {
+      height: 200px;
+    }
+  
+    .messageBox {
+      width: 95%;
+    }
+  
+    #messageInput {
+      width: 80%;
+    }
+  
+    #sendButton {
+      width: 20%;
+    }
+  
+    .chat-header {
+      flex-direction: column;
+    }
+  
+    #welcome-message {
+      margin-bottom: 10px;
+    }
+  
+    #logout-button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+    #messageInput {
+      width: 250%;
+  }
+  }
+   
+  @media (max-width: 400px) {
+    .messageBox {
+      width: 90%;
+    }
+    #messageInput {
+      width: 200%;
+  }
+  }

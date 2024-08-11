@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Enter Chatroom</h1>
+    <input type="text" id="username-input" placeholder="Enter your username">
+    <button id="login-button">Login</button>
+  </div>
+
+  <script>
+    document.getElementById('login-button').addEventListener('click', function() {
+      const username = document.getElementById('username-input').value.trim();
+      if (username) {
+        localStorage.setItem('username', username);
+        window.location.href = '/chat.html';
+      } else {
+        alert('Please enter a username');
+      }
+    });
+  </script>
+</body>
+</html>
